@@ -1,0 +1,16 @@
+{
+  "name": "FG Facility",
+  "short_name": "FG Facility",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "217x182",
+      "type": "image/png"
+    }
+  ]
+}

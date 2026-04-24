@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FG Facility | Gebaeudereinigung, Baureinigung &amp; Security in Muenchen</title>
+    <meta
+      name="description"
+      content="FG Facility ist Ihr Partner fuer Gebaeudereinigung, Baureinigung, Objektbetreuung, Security und Catering in Muenchen und Umgebung."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="canonical" href="https://fgfacility.de/" />
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FG Facility" />
+    <meta property="og:title" content="FG Facility | Gebaeudereinigung, Baureinigung &amp; Security in Muenchen" />
+    <meta
+      property="og:description"
+      content="Professionelle Facility Services fuer Unternehmen, Baustellen und Objekte in Muenchen und Umgebung."
+    />
+    <meta property="og:url" content="https://fgfacility.de/" />
+    <meta property="og:image" content="https://fgfacility.de/logo.png" />
+    <meta property="og:image:alt" content="FG Facility Logo" />
+    <meta property="og:image:width" content="217" />
+    <meta property="og:image:height" content="182" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="FG Facility | Gebaeudereinigung, Baureinigung &amp; Security in Muenchen" />
+    <meta
+      name="twitter:description"
+      content="Professionelle Facility Services fuer Unternehmen, Baustellen und Objekte in Muenchen und Umgebung."
+    />
+    <meta name="twitter:image" content="https://fgfacility.de/logo.png" />
+    <meta name="twitter:image:alt" content="FG Facility Logo" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["LocalBusiness", "CleaningService"],
+        "name": "FG Facility",
+        "url": "https://fgfacility.de/",
+        "logo": "https://fgfacility.de/logo.png",
+        "image": "https://fgfacility.de/logo.png",
+        "telephone": "+4917672153527",
+        "email": "info@fgfacility.de",
+        "sameAs": ["https://fgfacility.com/", "https://fgfacility.org/"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kronstadterstr 4",
+          "addressLocality": "Muenchen",
+          "postalCode": "81677",
+          "addressCountry": "DE"
+        },
+        "areaServed": ["Muenchen", "Bayern"],
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "telephone": "+4917672153527",
+          "email": "info@fgfacility.de",
+          "availableLanguage": ["de"]
+        }],
+        "description": "FG Facility ist Ihr Partner fuer Gebaeudereinigung, Baureinigung, Objektbetreuung, Security und Catering in Muenchen und Umgebung."
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&family=Fira+Code:wght@300..700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tailwind.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+  </head>
+  <body class="home-page">
+<div class="min-h-screen w-full bg-background flex flex-col relative font-sans text-foreground" style="">
+  <!-- Sticky Header -->
+  <header class="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-300" style="">
+    <div class="container mx-auto px-6 h-20 flex items-center justify-between" style="">
+      <div class="flex items-center gap-3" style="">
+        <span class="font-heading font-bold text-xl tracking-tight text-primary" style="">
+          <img src="logo.png" alt="FG Facility Gebaeudeservice Logo" style="height: 70px;">
+        </span>
+      </div>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-muted-foreground" style="">
+        <a href="#leistungen" class="hover:text-primary transition-colors" style="">Leistungen</a>
+        <a href="#unternehmen" class="hover:text-primary transition-colors" style="">Unternehmen</a>
+        <a href="#vertrauen" class="hover:text-primary transition-colors" style="">Qualität</a>
+        <a href="#kontakt" class="hover:text-primary transition-colors" style="">Kontakt</a>
+      </nav>
+      <div class="flex items-center gap-4" style="">
+        <a href="#kontakt" class="hidden lg:inline-flex items-center justify-center bg-primary text-primary-foreground h-11 px-6 font-medium text-sm hover:bg-primary/90 transition-colors rounded-sm shadow-sm" style="">
+          Angebot anfordern
+        </a>
+        <button id="mobile-menu-toggle" aria-controls="mobile-menu" aria-expanded="false" class="lg:hidden inline-flex items-center justify-center h-11 w-11 text-foreground hover:bg-muted transition-colors rounded-sm">
+          <iconify-icon icon="lucide:menu" class="text-2xl"></iconify-icon>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="lg:hidden hidden border-t border-border bg-background/95 backdrop-blur" style="">
+      <nav class="container mx-auto px-6 py-4 flex flex-col gap-3 text-sm font-medium text-muted-foreground" style="">
+        <a href="#leistungen" class="hover:text-primary transition-colors" style="">Leistungen</a>
+        <a href="#unternehmen" class="hover:text-primary transition-colors" style="">Unternehmen</a>
+        <a href="#vertrauen" class="hover:text-primary transition-colors" style="">Qualität</a>
+        <a href="#kontakt" class="hover:text-primary transition-colors" style="">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 1. Hero Section -->
+  <section class="relative w-full py-24 lg:py-32 xl:py-40 bg-muted overflow-hidden" style="">
+    <div class="absolute inset-0 z-0" style="">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;q=80&amp;w=2070" alt="Moderne Gewerbeimmobilie als Hintergrund fuer Facility Management" class="w-full h-full object-cover opacity-30" style="">
+      <div class="absolute inset-0 bg-background/80 backdrop-blur-[2px]" style=""></div>
+    </div>
+    <div class="container relative z-10 mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center" style="">
+      <div class="flex flex-col gap-8 max-w-2xl" style="">
+        <div class="inline-flex items-center gap-2 bg-background text-foreground px-4 py-2 rounded-full w-fit text-sm font-medium border border-border shadow-sm" style="">
+          <iconify-icon icon="lucide:shield-check" class="text-secondary text-lg"></iconify-icon>
+          Zertifizierter Meisterbetrieb
+        </div>
+        <h1 class="font-heading text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.1] text-primary" style="">
+          Zuverlässige Facility Services <br>
+          <span class="text-foreground" style="">aus einer Hand.</span>
+        </h1>
+        <p class="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg" style="">
+          Wir kümmern uns um Ihre Immobilien, Baustellen und Sicherheit – professionell, menschlich und effizient. Ihr Partner vor Ort.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 pt-4" style="">
+          <a href="#kontakt" class="inline-flex items-center justify-center bg-primary text-primary-foreground h-14 px-8 font-bold text-base hover:bg-primary/90 transition-colors rounded-sm shadow-md" style="">
+            Angebot anfordern
+            <iconify-icon icon="lucide:arrow-right" class="ml-2 text-lg"></iconify-icon>
+          </a>
+          <a href="#leistungen" class="inline-flex items-center justify-center border-2 border-primary bg-transparent text-primary h-14 px-8 font-bold text-base hover:bg-primary/5 transition-colors rounded-sm" style="">
+            Unsere Leistungen
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Trust Bar Section -->
+  <section id="vertrauen" class="w-full py-12 bg-background border-b border-border" style="">
+    <div class="container mx-auto px-6" style="">
+      <div class="flex flex-wrap justify-center gap-8 lg:gap-16 text-center" style="">
+        <div class="flex items-center gap-4" style="">
+          <iconify-icon icon="lucide:building" class="text-3xl text-secondary"></iconify-icon>
+          <div class="text-left" style="">
+            <span class="block text-xl font-heading font-bold text-primary" style="">500+</span>
+            <span class="text-sm text-muted-foreground uppercase tracking-wider font-medium" style="">Betreute Objekte</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-4" style="">
+          <iconify-icon icon="lucide:clock" class="text-3xl text-secondary"></iconify-icon>
+          <div class="text-left" style="">
+            <span class="block text-xl font-heading font-bold text-primary" style="">24/7</span>
+            <span class="text-sm text-muted-foreground uppercase tracking-wider font-medium" style="">Notdienst</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-4" style="">
+          <iconify-icon icon="lucide:award" class="text-3xl text-secondary"></iconify-icon>
+          <div class="text-left" style="">
+            <span class="block text-xl font-heading font-bold text-primary" style="">ISO 9001</span>
+            <span class="text-sm text-muted-foreground uppercase tracking-wider font-medium" style="">Zertifiziert</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-4" style="">
+          <iconify-icon icon="lucide:users" class="text-3xl text-secondary"></iconify-icon>
+          <div class="text-left" style="">
+            <span class="block text-xl font-heading font-bold text-primary" style="">15 Jahre</span>
+            <span class="text-sm text-muted-foreground uppercase tracking-wider font-medium" style="">Erfahrung</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Services Overview Grid -->
+  <section id="leistungen" class="w-full py-24 bg-muted" style="">
+    <div class="container mx-auto px-6" style="">
+      <div class="text-center max-w-3xl mx-auto mb-16" style="">
+        <h2 class="font-heading text-3xl lg:text-5xl font-bold tracking-tight text-primary mb-6" style="">Unsere Kernkompetenzen</h2>
+        <p class="text-muted-foreground text-lg leading-relaxed" style="">Maßgeschneiderte Dienstleistungen für Ihre betrieblichen Anforderungen. Alles aus einer Hand, professionell koordiniert.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" style="">
+        <div class="group flex flex-col bg-background border border-border p-8 hover:border-primary hover:shadow-lg transition-all duration-300 rounded-sm" style="">
+          <div class="h-14 w-14 bg-muted text-secondary flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-secondary-foreground transition-colors rounded-sm" style="">
+            <iconify-icon icon="lucide:sparkles" class="text-3xl"></iconify-icon>
+          </div>
+          <h3 class="font-heading text-xl font-bold mb-3 text-primary" style="">Gebäudereinigung</h3>
+          <p class="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow" style="">Professionelle Unterhalts-, Glas- und Fassadenreinigung für repräsentative Geschäftsräume.</p>
+        </div>
+        <div class="group flex flex-col bg-background border border-border p-8 hover:border-primary hover:shadow-lg transition-all duration-300 rounded-sm" style="">
+          <div class="h-14 w-14 bg-muted text-secondary flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-secondary-foreground transition-colors rounded-sm" style="">
+            <iconify-icon icon="lucide:hard-hat" class="text-3xl"></iconify-icon>
+          </div>
+          <h3 class="font-heading text-xl font-bold mb-3 text-primary" style="">Baureinigung</h3>
+          <p class="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow" style="">Baugrob- und Baufeinreinigung für eine besenreine Übergabe Ihrer Bauprojekte.</p>
+        </div>
+        <div class="group flex flex-col bg-background border border-border p-8 hover:border-primary hover:shadow-lg transition-all duration-300 rounded-sm" style="">
+          <div class="h-14 w-14 bg-muted text-secondary flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-secondary-foreground transition-colors rounded-sm" style="">
+            <iconify-icon icon="lucide:key" class="text-3xl"></iconify-icon>
+          </div>
+          <h3 class="font-heading text-xl font-bold mb-3 text-primary" style="">Objektbetreuung</h3>
+          <p class="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow" style="">Ganzheitliches Facility Management und Hausmeisterdienste zur Werterhaltung.</p>
+        </div>
+        <div class="group flex flex-col bg-background border border-border p-8 hover:border-primary hover:shadow-lg transition-all duration-300 rounded-sm" style="">
+          <div class="h-14 w-14 bg-muted text-secondary flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-secondary-foreground transition-colors rounded-sm" style="">
+            <iconify-icon icon="lucide:users-2" class="text-3xl"></iconify-icon>
+          </div>
+          <h3 class="font-heading text-xl font-bold mb-3 text-primary" style="">Personalservice</h3>
+          <p class="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow" style="">Zuverlässige Überlassung von Fach- und Hilfskräften zur Abdeckung von Auftragsspitzen.</p>
+        </div>
+        <div class="group flex flex-col bg-background border border-border p-8 hover:border-primary hover:shadow-lg transition-all duration-300 rounded-sm" style="">
+          <div class="h-14 w-14 bg-muted text-secondary flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-secondary-foreground transition-colors rounded-sm" style="">
+            <iconify-icon icon="lucide:shield" class="text-3xl"></iconify-icon>
+          </div>
+          <h3 class="font-heading text-xl font-bold mb-3 text-primary" style="">Security Services</h3>
+          <p class="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow" style="">Objektschutz und Revierfahrten durch geschultes Sicherheitspersonal.</p>
+        </div>
+        <div class="group flex flex-col bg-background border border-border p-8 hover:border-primary hover:shadow-lg transition-all duration-300 rounded-sm" style="">
+          <div class="h-14 w-14 bg-muted text-secondary flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-secondary-foreground transition-colors rounded-sm" style="">
+            <iconify-icon icon="lucide:utensils" class="text-3xl"></iconify-icon>
+          </div>
+          <h3 class="font-heading text-xl font-bold mb-3 text-primary" style="">Catering Services</h3>
+          <p class="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow" style="">Hochwertige Betriebsgastronomie und Event-Catering mit frischen Zutaten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Detailed Services Sections -->
+  <!-- Detail: Gebäudereinigung -->
+  <section class="w-full py-24 bg-background" style="">
+    <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center" style="">
+      <div class="relative h-[400px] lg:h-[500px] w-full rounded-sm overflow-hidden shadow-lg border border-border" style="">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Professionelle Gebaeudereinigung in hellen Buero- und Geschaeftsraeumen" class="absolute inset-0 w-full h-full object-cover" style="">
+      </div>
+      <div class="flex flex-col gap-6" style="">
+        <div class="inline-flex items-center gap-2 text-secondary font-bold uppercase text-sm tracking-widest" style="">
+          <iconify-icon icon="lucide:sparkles"></iconify-icon> Gebäudereinigung
+        </div>
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-primary" style="">Strahlende Sauberkeit für Ihr Unternehmen</h2>
+        <p class="text-lg text-muted-foreground leading-relaxed" style="">Ein sauberes Arbeitsumfeld ist die Visitenkarte Ihres Unternehmens. Unser geschultes Reinigungspersonal sorgt für hygienische und repräsentative Räumlichkeiten – zuverlässig und diskret.</p>
+        <ul class="flex flex-col gap-3 mt-4" style="">
+          <li class="flex items-center gap-3 text-foreground font-medium" style=""><iconify-icon icon="lucide:check-circle-2" class="text-secondary text-xl"></iconify-icon> Tägliche Unterhaltsreinigung</li>
+          <li class="flex items-center gap-3 text-foreground font-medium" style=""><iconify-icon icon="lucide:check-circle-2" class="text-secondary text-xl"></iconify-icon> Fenster- und Glasreinigung</li>
+          <li class="flex items-center gap-3 text-foreground font-medium" style=""><iconify-icon icon="lucide:check-circle-2" class="text-secondary text-xl" style=""></iconify-icon> Teppich- und Polsterreinigung</li>
+          <li class="flex items-center gap-3 text-foreground font-medium" style=""><iconify-icon icon="lucide:check-circle-2" class="text-secondary text-xl" style=""></iconify-icon> Desinfektionsmaßnahmen</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail: Baureinigung & Security -->
+  <section class="w-full py-24 bg-muted" style="">
+    <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center" style="">
+      <div class="flex flex-col gap-6 lg:order-1 order-2" style="">
+        <div class="inline-flex items-center gap-2 text-secondary font-bold uppercase text-sm tracking-widest" style="visibility: visible;">
+          <iconify-icon icon="lucide:shield" style=""></iconify-icon> Security &amp; Baureinigung
+        </div>
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-primary" style="visibility: visible;">Sicherheit und Ordnung auf Ihrer Baustelle</h2>
+        <p class="text-lg text-muted-foreground leading-relaxed" style="">Wir begleiten Ihr Bauprojekt von der ersten Absperrung bis zur schlüsselfertigen Übergabe. Unser Team vereint professionelle Baureinigung mit lückenlosem Objektschutz.</p>
+        <ul class="flex flex-col gap-3 mt-4" style="">
+          <li class="flex items-center gap-3 text-foreground font-medium" style=""><iconify-icon icon="lucide:check-circle-2" class="text-secondary text-xl" style=""></iconify-icon> Baugrob- und Baufeinreinigung</li>
+          <li class="flex items-center gap-3 text-foreground font-medium" style=""><iconify-icon icon="lucide:check-circle-2" class="text-secondary text-xl" style=""></iconify-icon> Baustellenbewachung (24/7)</li>
+          <li class="flex items-center gap-3 text-foreground font-medium" style=""><iconify-icon icon="lucide:check-circle-2" class="text-secondary text-xl" style=""></iconify-icon> Zutrittskontrollen &amp; Empfangsdienste</li>
+          <li class="flex items-center gap-3 text-foreground font-medium" style=""><iconify-icon icon="lucide:check-circle-2" class="text-secondary text-xl" style=""></iconify-icon> Fachgerechte Entsorgung</li>
+        </ul>
+      </div>
+      <div class="relative h-[400px] lg:h-[500px] w-full rounded-sm overflow-hidden shadow-lg border border-border lg:order-2 order-1" style="">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Baustellenabsicherung und Baureinigung mit professionellem Team" class="absolute inset-0 w-full h-full object-cover" style="">
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Why Choose Us -->
+  <section class="w-full py-24 bg-background border-y border-border" style="">
+    <div class="container mx-auto px-6" style="">
+      <div class="text-center max-w-3xl mx-auto mb-16" style="">
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold tracking-tight text-primary mb-6" style="">Warum wir der richtige Partner sind</h2>
+        <p class="text-muted-foreground text-lg" style="">Wir setzen auf Qualität, Transparenz und eine partnerschaftliche Zusammenarbeit auf Augenhöhe.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8" style="">
+        <div class="flex flex-col items-center text-center gap-4 p-6 bg-muted rounded-sm border border-border" style="">
+          <div class="h-16 w-16 bg-background rounded-full flex items-center justify-center mb-2 shadow-sm border border-border" style="">
+            <iconify-icon icon="lucide:thumbs-up" class="text-3xl text-secondary"></iconify-icon>
+          </div>
+          <h3 class="font-bold text-xl text-primary" style="">Höchste Zuverlässigkeit</h3>
+          <p class="text-muted-foreground text-sm" style="">Fest angestelltes Personal und klare Vertretungsregelungen garantieren eine lückenlose Betreuung.</p>
+        </div>
+        <div class="flex flex-col items-center text-center gap-4 p-6 bg-muted rounded-sm border border-border" style="">
+          <div class="h-16 w-16 bg-background rounded-full flex items-center justify-center mb-2 shadow-sm border border-border" style="">
+            <iconify-icon icon="lucide:zap" class="text-3xl text-secondary"></iconify-icon>
+          </div>
+          <h3 class="font-bold text-xl text-primary" style="">Schnelle Reaktionszeit</h3>
+          <p class="text-muted-foreground text-sm" style="">Dank kurzer Entscheidungswege und unserem 24/7 Notdienst sind wir sofort zur Stelle, wenn Sie uns brauchen.</p>
+        </div>
+        <div class="flex flex-col items-center text-center gap-4 p-6 bg-muted rounded-sm border border-border" style="">
+          <div class="h-16 w-16 bg-background rounded-full flex items-center justify-center mb-2 shadow-sm border border-border" style="">
+            <iconify-icon icon="lucide:settings" class="text-3xl text-secondary"></iconify-icon>
+          </div>
+          <h3 class="font-bold text-xl text-primary" style="">Flexible Lösungen</h3>
+          <p class="text-muted-foreground text-sm" style="">Wir passen unsere Dienstleistungen dynamisch an Ihre aktuellen betrieblichen Anforderungen an.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Process Section -->
+  <section class="w-full py-24 bg-muted" style="">
+    <div class="container mx-auto px-6" style="">
+      <div class="text-center max-w-3xl mx-auto mb-16" style="">
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold tracking-tight text-primary mb-4" style="">Unser Prozess</h2>
+        <p class="text-muted-foreground text-lg" style="">In vier einfachen Schritten zu Ihrem maßgeschneiderten Service-Konzept.</p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-8 relative" style="">
+        <div class="hidden md:block absolute top-8 left-[10%] right-[10%] h-px bg-border z-0" style=""></div>
+        
+        <div class="relative z-10 flex flex-col items-center text-center gap-4 bg-muted" style="">
+          <div class="h-16 w-16 bg-background border-2 border-primary rounded-full flex items-center justify-center text-xl font-bold text-primary shadow-sm" style="">1</div>
+          <h4 class="font-bold text-lg text-foreground" style="">Anfrage &amp; Bedarf</h4>
+          <p class="text-sm text-muted-foreground" style="">Wir analysieren Ihre Anforderungen in einem persönlichen Gespräch vor Ort.</p>
+        </div>
+        <div class="relative z-10 flex flex-col items-center text-center gap-4 bg-muted" style="">
+          <div class="h-16 w-16 bg-background border-2 border-primary rounded-full flex items-center justify-center text-xl font-bold text-primary shadow-sm" style="">2</div>
+          <h4 class="font-bold text-lg text-foreground" style="">Konzept &amp; Angebot</h4>
+          <p class="text-sm text-muted-foreground" style="">Sie erhalten ein transparentes, maßgeschneidertes Leistungsverzeichnis.</p>
+        </div>
+        <div class="relative z-10 flex flex-col items-center text-center gap-4 bg-muted" style="">
+          <div class="h-16 w-16 bg-background border-2 border-primary rounded-full flex items-center justify-center text-xl font-bold text-primary shadow-sm" style="">3</div>
+          <h4 class="font-bold text-lg text-foreground" style="">Ausführung</h4>
+          <p class="text-sm text-muted-foreground" style="">Unser geschultes Team übernimmt die professionelle Umsetzung.</p>
+        </div>
+        <div class="relative z-10 flex flex-col items-center text-center gap-4 bg-muted" style="">
+          <div class="h-16 w-16 bg-background border-2 border-primary rounded-full flex items-center justify-center text-xl font-bold text-primary shadow-sm" style="">4</div>
+          <h4 class="font-bold text-lg text-foreground" style="">Laufende Betreuung</h4>
+          <p class="text-sm text-muted-foreground" style="">Regelmäßige Qualitätskontrollen und Ihr persönlicher Ansprechpartner.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. About Us -->
+  <section id="unternehmen" class="w-full py-24 bg-background" style="">
+    <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center" style="">
+      <div class="relative h-[500px] w-full rounded-sm overflow-hidden group border border-border shadow-md" style="">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="FG Facility Team bei der Objektbetreuung vor Ort" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style="">
+      </div>
+      <div class="flex flex-col gap-6" style="">
+        <div class="inline-flex items-center gap-2 text-secondary font-bold uppercase text-sm tracking-widest" style="">
+          <iconify-icon icon="lucide:heart"></iconify-icon> Über Uns
+        </div>
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold text-primary leading-tight" style="">
+          Wir sind mehr als ein Dienstleister. Wir sind Ihr Partner vor Ort.
+        </h2>
+        <div class="w-20 h-1 bg-secondary rounded-full" style=""></div>
+        <p class="text-lg text-muted-foreground leading-relaxed" style="">
+          Seit unserer Gründung steht der Mensch bei uns im Mittelpunkt. Wir glauben fest daran, dass hervorragende Dienstleistungen nur durch motivierte und gut ausgebildete Mitarbeiter erbracht werden können.
+        </p>
+        <p class="text-lg text-muted-foreground leading-relaxed" style="">
+          Deshalb investieren wir kontinuierlich in die Weiterbildung unseres Teams und setzen auf faire Arbeitsbedingungen. Das Ergebnis? Geringe Fluktuation, hohe Fachkompetenz und Kunden, die uns seit Jahren vertrauen.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 9. Contact Section -->
+  <section id="kontakt" class="w-full py-24 lg:py-32 bg-background" style="">
+    <div class="container mx-auto px-6 grid lg:grid-cols-12 gap-16" style="">
+      <!-- Contact Info -->
+      <div class="lg:col-span-5 flex flex-col gap-10" style="">
+        <div style="">
+          <h2 class="font-heading text-3xl lg:text-5xl font-bold tracking-tight text-primary mb-6" style="">Lassen Sie uns sprechen.</h2>
+          <p class="text-muted-foreground text-lg leading-relaxed" style="">
+            Haben Sie Fragen zu unseren Leistungen oder benötigen Sie ein individuelles Angebot? Unser Team steht Ihnen jederzeit zur Verfügung.
+          </p>
+        </div>
+        <div class="flex flex-col gap-8 bg-muted p-8 border border-border rounded-sm shadow-sm" style="">
+          <div class="flex items-center gap-4" style="">
+            <div class="h-12 w-12 bg-background border border-border text-secondary flex items-center justify-center rounded-sm shrink-0 shadow-sm" style="">
+              <iconify-icon icon="lucide:building-2" class="text-2xl"></iconify-icon>
+            </div>
+            <div style="">
+              <h4 class="font-bold text-foreground mb-1" style="">Unternehmen</h4>
+              <p class="text-muted-foreground" style="">FG Facility Gebäudeservice</p>
+              <p class="text-muted-foreground" style="">Funda Gürel</p>
+            </div>
+          </div>
+          <div class="w-full h-px bg-border" style=""></div>
+          <div class="flex items-center gap-4" style="">
+            <div class="h-12 w-12 bg-background border border-border text-secondary flex items-center justify-center rounded-sm shrink-0 shadow-sm" style="">
+              <iconify-icon icon="lucide:phone" class="text-2xl"></iconify-icon>
+            </div>
+            <div style="">
+              <h4 class="font-bold text-foreground mb-1" style="">Telefon</h4>
+              <p class="text-muted-foreground" style="">017672153527</p>
+            </div>
+          </div>
+          <div class="w-full h-px bg-border" style=""></div>
+          <div class="flex items-center gap-4" style="">
+            <div class="h-12 w-12 bg-background border border-border text-secondary flex items-center justify-center rounded-sm shrink-0 shadow-sm" style="">
+              <iconify-icon icon="lucide:map-pin" class="text-2xl"></iconify-icon>
+            </div>
+            <div style="">
+              <h4 class="font-bold text-foreground mb-1" style="">Adresse</h4>
+              <p class="text-muted-foreground" style="">Kronstadterstr 4<br>81677 München</p>
+            </div>
+          </div>
+          <div class="w-full h-px bg-border" style=""></div>
+          <div class="flex items-center gap-4" style="">
+            <div class="h-12 w-12 bg-background border border-border text-secondary flex items-center justify-center rounded-sm shrink-0 shadow-sm" style="">
+              <iconify-icon icon="lucide:mail" class="text-2xl"></iconify-icon>
+            </div>
+            <div style="">
+              <h4 class="font-bold text-foreground mb-1" style="">E-Mail</h4>
+              <p class="text-muted-foreground" style="">info@fgfacility.de</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="lg:col-span-7 bg-background border border-border p-8 lg:p-12 shadow-xl rounded-sm relative" style="">
+        <div class="absolute top-0 left-0 w-full h-2 bg-primary rounded-t-sm" style=""></div>
+        <h3 class="font-heading text-2xl font-bold mb-8 text-primary" style="">Kontakt aufnehmen</h3>
+        <form class="flex flex-col gap-6" style="">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" style="">
+            <div class="flex flex-col gap-2" style="">
+              <label class="text-sm font-bold text-foreground" style="">Vorname</label>
+              <input type="text" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Max" style="">
+            </div>
+            <div class="flex flex-col gap-2" style="">
+              <label class="text-sm font-bold text-foreground" style="">Nachname</label>
+              <input type="text" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Mustermann" style="">
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" style="">
+            <div class="flex flex-col gap-2" style="">
+              <label class="text-sm font-bold text-foreground" style="">Unternehmen</label>
+              <input type="text" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Firma GmbH" style="">
+            </div>
+            <div class="flex flex-col gap-2" style="">
+              <label class="text-sm font-bold text-foreground" style="">E-Mail Adresse</label>
+              <input type="email" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="max@firma.de" style="">
+            </div>
+          </div>
+          <div class="flex flex-col gap-2" style="">
+            <label class="text-sm font-bold text-foreground" style="">Interesse an</label>
+            <div class="relative" style="">
+              <select class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm appearance-none" style="">
+                <option value="">Bitte wählen Sie eine Leistung...</option>
+                <option value="gebaeudereinigung">Gebäudereinigung</option>
+                <option value="baureinigung">Baureinigung</option>
+                <option value="objektbetreuung">Objektbetreuung</option>
+                <option value="personalservice">Personalservice</option>
+                <option value="security">Security Services</option>
+                <option value="catering">Catering Services</option>
+              </select>
+              <iconify-icon icon="lucide:chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none"></iconify-icon>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2" style="">
+            <label class="text-sm font-bold text-foreground" style="">Ihre Nachricht</label>
+            <textarea class="min-h-[140px] w-full border border-border bg-muted/50 p-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm resize-y" placeholder="Beschreiben Sie kurz Ihr Anliegen..." style=""></textarea>
+          </div>
+          <button type="button" class="mt-4 inline-flex items-center justify-center bg-primary text-primary-foreground h-14 px-8 font-bold text-base hover:bg-primary/90 transition-colors w-full rounded-sm shadow-md" style="">
+            Nachricht senden
+            <iconify-icon icon="lucide:send" class="ml-2 text-lg"></iconify-icon>
+          </button>
+          <p class="text-xs text-muted-foreground text-center mt-2" style="">
+            Mit dem Absenden erklären Sie sich mit unserer <a href="#" class="underline hover:text-primary" style="">Datenschutzerklärung</a> einverstanden.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Legal / Footer -->
+  <footer class="unified-footer" style="width: 100%; background: #f7f8fa; padding: 64px 0 32px; border-top: 1px solid #e5e7eb;">
+    <div class="unified-footer-inner" style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+      <div class="unified-footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; margin-bottom: 48px;">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="logo.png" alt="FG Facility Gebaeudeservice Logo" style="height: 56px;">
+          </div>
+          <p style="margin: 0; font-size: 14px; color: #4a4a4a; line-height: 1.6;">
+            Ihr zuverlaessiger Partner fuer professionelles Facility Management,
+            Reinigung und Sicherheit.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <h4 style="margin: 0; color: #1a1a1a; font-size: 16px;">Navigation</h4>
+          <nav style="display: flex; flex-direction: column; gap: 8px; font-size: 14px;">
+            <a href="/#leistungen">Leistungen</a>
+            <a href="/#unternehmen">Unternehmen</a>
+            <a href="/#vertrauen">Qualitaet</a>
+            <a href="/#kontakt">Kontakt</a>
+          </nav>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <h4 style="margin: 0; color: #1a1a1a; font-size: 16px;">Leistungen</h4>
+          <nav style="display: flex; flex-direction: column; gap: 8px; font-size: 14px;">
+            <a href="/#leistungen">Gebaeudereinigung</a>
+            <a href="/#leistungen">Baureinigung</a>
+            <a href="/#leistungen">Objektbetreuung</a>
+            <a href="/#leistungen">Security Services</a>
+          </nav>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <h4 style="margin: 0; color: #1a1a1a; font-size: 16px;">Kontakt</h4>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #4a4a4a;">
+            <p style="margin: 0;">FG Facility Gebaeudeservice<br>Funda Gürel<br>Kronstadterstr 4<br>81677 Muenchen</p>
+            <p style="margin: 0;">017672153527</p>
+            <p style="margin: 0;">info@fgfacility.de</p>
+          </div>
+        </div>
+      </div>
+      <div style="width: 100%; height: 1px; background: #e5e7eb; margin-bottom: 24px;"></div>
+      <div class="unified-footer-bottom" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px;">
+        <div class="unified-footer-copy" style="font-size: 12px; color: #4a4a4a; font-weight: 600;">
+          &copy; 2026 FG Facility Gebaeudeservice. Alle Rechte vorbehalten.
+        </div>
+        <div class="unified-footer-legal" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 18px; font-size: 12px; font-weight: 600;">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="agb.html">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body></html>

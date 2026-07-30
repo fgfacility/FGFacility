@@ -168,6 +168,49 @@
   font-weight: 700;
 }
 
+/* Language switcher (shared by landing and legal pages) */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  background: #fff;
+  overflow: hidden;
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.lang-switch a {
+  padding: 7px 13px;
+  line-height: 1;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.lang-switch a:hover {
+  background: #eef2f6;
+  color: #002060;
+  text-decoration: none;
+}
+
+.lang-switch a[aria-current="true"] {
+  background: #002060;
+  color: #ffffff;
+}
+
+.legal-page .site-header-inner .lang-switch {
+  flex-shrink: 0;
+}
+
+.legal-page .site-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 @media (max-width: 900px) {
   .legal-page .site-nav {
     display: none;

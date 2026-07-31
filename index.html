@@ -423,47 +423,49 @@
       <div class="lg:col-span-7 bg-background border border-border p-8 lg:p-12 shadow-xl rounded-sm relative" style="">
         <div class="absolute top-0 left-0 w-full h-2 bg-primary rounded-t-sm" style=""></div>
         <h3 class="font-heading text-2xl font-bold mb-8 text-primary" style="">Kontakt aufnehmen</h3>
-        <form class="flex flex-col gap-6" style="">
+        <form class="flex flex-col gap-6" action="https://formspree.io/f/mlgqkdyj" method="POST" style="">
+          <input type="hidden" name="_subject" value="Neue Kontaktanfrage ueber fgfacility.de">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display: none;">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" style="">
             <div class="flex flex-col gap-2" style="">
-              <label class="text-sm font-bold text-foreground" style="">Vorname</label>
-              <input type="text" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Max" style="">
+              <label for="kontakt-vorname" class="text-sm font-bold text-foreground" style="">Vorname</label>
+              <input id="kontakt-vorname" name="Vorname" type="text" required class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Max" style="">
             </div>
             <div class="flex flex-col gap-2" style="">
-              <label class="text-sm font-bold text-foreground" style="">Nachname</label>
-              <input type="text" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Mustermann" style="">
+              <label for="kontakt-nachname" class="text-sm font-bold text-foreground" style="">Nachname</label>
+              <input id="kontakt-nachname" name="Nachname" type="text" required class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Mustermann" style="">
             </div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" style="">
             <div class="flex flex-col gap-2" style="">
-              <label class="text-sm font-bold text-foreground" style="">Unternehmen</label>
-              <input type="text" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Firma GmbH" style="">
+              <label for="kontakt-unternehmen" class="text-sm font-bold text-foreground" style="">Unternehmen</label>
+              <input id="kontakt-unternehmen" name="Unternehmen" type="text" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Firma GmbH" style="">
             </div>
             <div class="flex flex-col gap-2" style="">
-              <label class="text-sm font-bold text-foreground" style="">E-Mail Adresse</label>
-              <input type="email" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="max@firma.de" style="">
+              <label for="kontakt-email" class="text-sm font-bold text-foreground" style="">E-Mail Adresse</label>
+              <input id="kontakt-email" name="email" type="email" required class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="max@firma.de" style="">
             </div>
           </div>
           <div class="flex flex-col gap-2" style="">
-            <label class="text-sm font-bold text-foreground" style="">Interesse an</label>
+            <label for="kontakt-leistung" class="text-sm font-bold text-foreground" style="">Interesse an</label>
             <div class="relative" style="">
-              <select class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm appearance-none" style="">
+              <select id="kontakt-leistung" name="Leistung" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm appearance-none" style="">
                 <option value="">Bitte wählen Sie eine Leistung...</option>
-                <option value="gebaeudereinigung">Gebäudereinigung</option>
-                <option value="baureinigung">Baureinigung</option>
-                <option value="objektbetreuung">Objektbetreuung</option>
-                <option value="personalservice">Personalservice</option>
-                <option value="security">Security Services</option>
-                <option value="catering">Catering Services</option>
+                <option value="Gebäudereinigung">Gebäudereinigung</option>
+                <option value="Baureinigung">Baureinigung</option>
+                <option value="Objektbetreuung">Objektbetreuung</option>
+                <option value="Personalservice">Personalservice</option>
+                <option value="Security Services">Security Services</option>
+                <option value="Catering Services">Catering Services</option>
               </select>
               <iconify-icon icon="lucide:chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none"></iconify-icon>
             </div>
           </div>
           <div class="flex flex-col gap-2" style="">
-            <label class="text-sm font-bold text-foreground" style="">Ihre Nachricht</label>
-            <textarea class="min-h-[140px] w-full border border-border bg-muted/50 p-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm resize-y" placeholder="Beschreiben Sie kurz Ihr Anliegen..." style=""></textarea>
+            <label for="kontakt-nachricht" class="text-sm font-bold text-foreground" style="">Ihre Nachricht</label>
+            <textarea id="kontakt-nachricht" name="Nachricht" required class="min-h-[140px] w-full border border-border bg-muted/50 p-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm resize-y" placeholder="Beschreiben Sie kurz Ihr Anliegen..." style=""></textarea>
           </div>
-          <button type="button" class="mt-4 inline-flex items-center justify-center bg-primary text-primary-foreground h-14 px-8 font-bold text-base hover:bg-primary/90 transition-colors w-full rounded-sm shadow-md" style="">
+          <button type="submit" class="mt-4 inline-flex items-center justify-center bg-primary text-primary-foreground h-14 px-8 font-bold text-base hover:bg-primary/90 transition-colors w-full rounded-sm shadow-md" style="">
             Nachricht senden
             <iconify-icon icon="lucide:send" class="ml-2 text-lg"></iconify-icon>
           </button>

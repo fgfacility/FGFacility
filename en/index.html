@@ -423,47 +423,49 @@
       <div class="lg:col-span-7 bg-background border border-border p-8 lg:p-12 shadow-xl rounded-sm relative" style="">
         <div class="absolute top-0 left-0 w-full h-2 bg-primary rounded-t-sm" style=""></div>
         <h3 class="font-heading text-2xl font-bold mb-8 text-primary" style="">Get in touch</h3>
-        <form class="flex flex-col gap-6" style="">
+        <form class="flex flex-col gap-6" action="https://formspree.io/f/mlgqkdyj" method="POST" style="">
+          <input type="hidden" name="_subject" value="New contact request via fgfacility.de (EN)">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display: none;">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" style="">
             <div class="flex flex-col gap-2" style="">
-              <label class="text-sm font-bold text-foreground" style="">First name</label>
-              <input type="text" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="John" style="">
+              <label for="contact-firstname" class="text-sm font-bold text-foreground" style="">First name</label>
+              <input id="contact-firstname" name="First name" type="text" required class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="John" style="">
             </div>
             <div class="flex flex-col gap-2" style="">
-              <label class="text-sm font-bold text-foreground" style="">Last name</label>
-              <input type="text" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Smith" style="">
+              <label for="contact-lastname" class="text-sm font-bold text-foreground" style="">Last name</label>
+              <input id="contact-lastname" name="Last name" type="text" required class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Smith" style="">
             </div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" style="">
             <div class="flex flex-col gap-2" style="">
-              <label class="text-sm font-bold text-foreground" style="">Company</label>
-              <input type="text" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Company Ltd." style="">
+              <label for="contact-company" class="text-sm font-bold text-foreground" style="">Company</label>
+              <input id="contact-company" name="Company" type="text" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="Company Ltd." style="">
             </div>
             <div class="flex flex-col gap-2" style="">
-              <label class="text-sm font-bold text-foreground" style="">Email address</label>
-              <input type="email" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="john@company.com" style="">
+              <label for="contact-email" class="text-sm font-bold text-foreground" style="">Email address</label>
+              <input id="contact-email" name="email" type="email" required class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm" placeholder="john@company.com" style="">
             </div>
           </div>
           <div class="flex flex-col gap-2" style="">
-            <label class="text-sm font-bold text-foreground" style="">Interested in</label>
+            <label for="contact-service" class="text-sm font-bold text-foreground" style="">Interested in</label>
             <div class="relative" style="">
-              <select class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm appearance-none" style="">
+              <select id="contact-service" name="Service" class="h-12 w-full border border-border bg-muted/50 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm appearance-none" style="">
                 <option value="">Please select a service...</option>
-                <option value="gebaeudereinigung">Building cleaning</option>
-                <option value="baureinigung">Construction cleaning</option>
-                <option value="objektbetreuung">Property management</option>
-                <option value="personalservice">Staffing services</option>
-                <option value="security">Security services</option>
-                <option value="catering">Catering services</option>
+                <option value="Building cleaning">Building cleaning</option>
+                <option value="Construction cleaning">Construction cleaning</option>
+                <option value="Property management">Property management</option>
+                <option value="Staffing services">Staffing services</option>
+                <option value="Security services">Security services</option>
+                <option value="Catering services">Catering services</option>
               </select>
               <iconify-icon icon="lucide:chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none"></iconify-icon>
             </div>
           </div>
           <div class="flex flex-col gap-2" style="">
-            <label class="text-sm font-bold text-foreground" style="">Your message</label>
-            <textarea class="min-h-[140px] w-full border border-border bg-muted/50 p-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm resize-y" placeholder="Briefly describe what you need..." style=""></textarea>
+            <label for="contact-message" class="text-sm font-bold text-foreground" style="">Your message</label>
+            <textarea id="contact-message" name="Message" required class="min-h-[140px] w-full border border-border bg-muted/50 p-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all rounded-sm resize-y" placeholder="Briefly describe what you need..." style=""></textarea>
           </div>
-          <button type="button" class="mt-4 inline-flex items-center justify-center bg-primary text-primary-foreground h-14 px-8 font-bold text-base hover:bg-primary/90 transition-colors w-full rounded-sm shadow-md" style="">
+          <button type="submit" class="mt-4 inline-flex items-center justify-center bg-primary text-primary-foreground h-14 px-8 font-bold text-base hover:bg-primary/90 transition-colors w-full rounded-sm shadow-md" style="">
             Send message
             <iconify-icon icon="lucide:send" class="ml-2 text-lg"></iconify-icon>
           </button>
